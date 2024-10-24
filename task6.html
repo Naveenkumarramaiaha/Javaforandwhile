@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>print sum of 15 to 25</p>
+    <script>
+        function sumRange(start, end) {
+    let sum = 0;
+
+    for (let i = start; i <= end; i++) {
+        sum += i; 
+    }
+
+    return sum;
+}
+const start = 15;
+const end = 25;
+const totalSum = sumRange(start, end);
+console.log(`The sum of numbers from ${start} to ${end} is: ${totalSum}`);
+
+    </script>
+</body>
+</html>

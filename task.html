@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Two Numbers</title>
+    <script></script>
+</head>
+
+<body>
+    
+    <h2>Add  Values</h2>
+    <input type="number" id="num1" >
+    <input type="number" id="num2" >
+    <button onclick="addValues()">+</button>
+    <button onclick="subractvalue()">-</button>
+    <button onclick="Multiplyvalue()">*</button>
+    <button onclick="divivalue()">/</button>
+    <div id="result"></div>
+    <script> 
+         function addValues() {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let result = num1 + num2;
+            document.getElementById("result").innerHTML = "Result: " + result;
+        }
+   
+        function subractvalue() {
+           let num1 = parseFloat(document.getElementById("num1").value);
+           let num2 = parseFloat(document.getElementById("num2").value);
+           let result = num1 - num2;
+           document.getElementById("result").innerHTML = "Result: " + result ;
+       }
+       function Multiplyvalue() {
+           let num1 = parseFloat(document.getElementById("num1").value);
+           let num2 = parseFloat(document.getElementById("num2").value);
+           let result = num1 * num2;
+           document.getElementById("result").innerHTML = "Result: " + result ;
+       }
+       function divivalue() {
+           let num1 = parseFloat(document.getElementById("num1").value);
+           let num2 = parseFloat(document.getElementById("num2").value);
+           let result = num1 / num2;
+           document.getElementById("result").innerHTML = "Result: " + result ;
+       }
+
+</script>
+   
+   
+</body>
+</html>
